@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IB Academy · Brochure Curso Intensivo</title>
+  <!-- Fuentes más animadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #1e40af;
+      --brand-2: #0ea5e9;
+      --accent: #f59e0b;
+      --text: #0f172a;
+      --muted: #475569;
+      --bg: #f8fafc;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--text); }
+    body { font-family: 'Nunito', system-ui, sans-serif; line-height: 1.6; }
+    h1, h2, h3 { font-family: 'Fredoka', 'Nunito', sans-serif; margin: 0 0 .5rem; }
+    h1 { font-size: 2.2rem; letter-spacing: .3px; }
+    h2 { font-size: 1.35rem; color: var(--brand); }
+    p { margin: .25rem 0 .75rem; }
+    .wrap { max-width: 940px; margin: 0 auto; padding: 24px; }
+    .card { background: var(--card); border-radius: 18px; box-shadow: 0 8px 28px rgba(2,6,23,.08); padding: 24px; }
+
+    .hero { background: linear-gradient(135deg, rgba(30,64,175,1) 0%, rgba(14,165,233,1) 100%); color: #fff; padding: 60px 24px; }
+    .hero .wrap { padding: 0; }
+    .brand-row { display: flex; align-items: center; gap: 16px; margin-bottom: 10px; }
+    .logo { width: 64px; height: 64px; border-radius: 16px; background: #fff; display: grid; place-items: center; color: var(--brand); font-weight: 700; font-family: 'Fredoka'; font-size: 1.3rem; }
+    .badge { display: inline-block; background: rgba(255,255,255,.2); padding: 6px 12px; border-radius: 999px; font-size: .85rem; }
+    .hero h1 { font-size: 2.4rem; line-height: 1.15; }
+    .subtitle { font-size: 1.05rem; opacity: .95; max-width: 780px; }
+    .pill { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--text); padding: 10px 16px; border-radius: 999px; font-weight: 600; margin-top: 16px; font-family: 'Nunito'; }
+    .pill small { color: var(--muted); font-weight: 500; }
+
+    .list { margin: 8px 0 0; padding-left: 20px; }
+    .list li { margin: 8px 0; }
+
+    table { width: 100%; border-collapse: collapse; border-radius: 14px; box-shadow: 0 6px 20px rgba(2,6,23,.06); overflow: hidden; }
+    th, td { padding: 12px 14px; text-align: left; }
+    thead th { background: #f1f5f9; color: var(--muted); font-weight: 700; font-size: .95rem; }
+    tbody tr + tr td { border-top: 1px solid #e5e7eb; }
+
+    .cta { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-top: 12px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--brand); color: #fff; padding: 12px 18px; border-radius: 14px; font-weight: 700; text-decoration: none; font-family: 'Nunito'; }
+    .btn.alt { background: var(--accent); color: #1f2937; }
+
+    .page { margin: 24px auto; }
+    .muted { color: var(--muted); }
+
+    /* Print adjustments for A4 */
+    @page { size: A4; margin: 12mm; }
+    @media print {
+      body { background: #fff; }
+      .page { page-break-after: always; }
+      .hero { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero page">
+    <div class="wrap">
+      <div class="brand-row">
+        <!--<div class="logo" aria-label="IB Academy">IB</div>-->
+        <div>
+          <div class="badge">Brochure</div>
+          <h1>Curso Intensivo de Matemática y Física para el Bachillerato Internacional (IB)</h1>
+        </div>
+      </div>
+      <p class="subtitle">Preparación enfocada en la sesión de noviembre. Metodología orientada a <strong>ejercicios tipo examen IB</strong>, uso experto del <strong>IB Data Booklet</strong> y acompañamiento con <strong>simulacros quincenales</strong>.</p>
+      <div class="pill">Duración: <strong>1 de septiembre – 31 de octubre</strong> <small>(9 semanas)</small></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="page card" aria-labelledby="quienes">
+      <h2 id="quienes">Quiénes somos</h2>
+      <p><strong>IB Academy</strong> se especializa en preparar estudiantes del Bachillerato Internacional en:</p>
+      <ul class="list">
+        <li><strong>Matemática AA (SL/HL)</strong></li>
+        <li><strong>Matemática AI (SL/HL)</strong></li>
+        <li><strong>Física (SL/HL)</strong></li>
+      </ul>
+
+      <h2 style="margin-top:22px">Beneficios</h2>
+      <ul class="list">
+        <li>Uso del <strong>IB Data Booklet</strong> en cada sesión y trabajo con <strong>markschemes oficiales</strong>.</li>
+        <li><strong>Videos de teoría</strong> antes de cada sesión para maximizar la <strong>práctica en clase</strong> con ejercicios tipo examen IB.</li>
+        <li>Enfoque en el uso correcto de la <strong>calculadora científica Casio CG50</strong>.</li>
+        <li>Grupos reducidos.</li>
+      </ul>
+
+      <h2 style="margin-top:22px">Estructura de clases</h2>
+      <ul class="list">
+        <li>Cada curso incluye <strong>2 sesiones virtuales semanales de 90 minutos</strong>.</li>
+        <li>Cada curso tiene además una <strong>clase virtual general de repaso los sábados (90 minutos)</strong>.</li>
+        <li><strong>Simulacros de examen IB</strong> cada dos semanas para medir progreso y consolidar estrategias.</li>
+      </ul>
+    </section>
+
+    <section class="page card" aria-labelledby="info">
+      <h2 id="info">Cursos y duración</h2>
+      <p><strong>Duración:</strong> Del 1 de septiembre al 31 de octubre <span class="muted">(9 semanas)</span>.</p>
+      <table aria-label="Modalidades">
+        <thead>
+          <tr>
+            <th>Cursos</th>
+            <th>Detalle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Matemática AA SL</td>
+            <td>2 sesiones/semana + repaso general sábado</td>
+          </tr>
+          <tr>
+            <td>Física SL</td>
+            <td>2 sesiones/semana + repaso general sábado</td>
+          </tr>
+          <tr>
+            <td>Paquete combinado</td>
+            <td>Matemática + Física</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 style="margin-top:22px">Inversión</h2>
+      <table aria-label="Costos">
+        <thead>
+          <tr>
+            <th>Opción</th>
+            <th>Mensualidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Curso individual</td>
+            <td><strong>S/ 500</strong> por mes</td>
+          </tr>
+          <tr>
+            <td>Paquete combinado (2 cursos)</td>
+            <td><strong>S/ 800</strong> por mes</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 style="margin-top:22px">Horarios</h2>
+      <table aria-label="Horarios">
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Curso</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Martes y Jueves</td>
+            <td>Física</td>
+            <td>18:00 – 19:30</td>
+          </tr>
+          <tr>
+            <td>Miércoles y Viernes</td>
+            <td>Matemática</td>
+            <td>18:00 – 19:30</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>Repaso general Física</td>
+            <td>16:00 – 17:30</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>Repaso general Matemática</td>
+            <td>17:45 – 19:15</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 style="margin-top:22px">Contacto</h2>
+      <div class="cta">
+        <a class="btn" href="tel:+51920257909" aria-label="Llamar a Raul Santa Cruz">
+          920257909 · Raul Santa Cruz
+        </a>
+        <a class="btn alt" href="https://wa.me/51920257909" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
